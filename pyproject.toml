@@ -1,0 +1,15 @@
+[project]
+name = "un-ga-health-governance"
+version = "0.1.0"
+description = "Reproducible analysis of UN General Assembly voting and global health governance indicators."
+requires-python = ">=3.10"
+authors = [
+  { name = "Suraya Bazarova" }
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

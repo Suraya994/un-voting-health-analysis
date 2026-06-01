@@ -1,0 +1,26 @@
+WHICH FILE SHOULD BE UPLOADED FIRST?
+
+Recommended GitHub upload order:
+
+1. README.md
+   This is the first file people read. It explains the purpose, structure, installation, and reproducibility logic of the repository.
+
+2. requirements.txt
+   This tells GitHub users and reviewers which Python libraries are required.
+
+3. src/un_ga_global_health_analysis.py
+   This is the main research code. It should be the core file of the repository.
+
+4. src/generate_synthetic_data.py
+   This is the reproducibility support file. It lets others test the pipeline even without private/real data.
+
+5. .gitignore
+   This prevents private CSV files, outputs, cache files, and virtual environments from being uploaded accidentally.
+
+6. data/ and outputs/ folders
+   These folders can exist in the repository, but real CSV files should not be uploaded unless they are public, cleaned, and legally shareable.
+
+IMPORTANT:
+- Do not upload confidential, restricted, licensed, or unpublished raw datasets unless you have permission.
+- If the real data cannot be shared, upload only the synthetic generator and explain that real data are excluded.
+- The code can still be professional and reproducible because the synthetic generator recreates the expected schema.
