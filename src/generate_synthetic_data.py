@@ -9,7 +9,8 @@ analysis pipeline when the real research dataset cannot be shared publicly.
 The generated values are artificial. They are useful for:
     1. checking whether the analysis code runs end-to-end;
     2. demonstrating the expected input file structure;
-    3. allowing reviewers or collaborators to reproduce the workflow.
+    3. supporting reproducible software checks without distributing restricted
+       empirical data.
 
 They must not be interpreted as empirical findings.
 """

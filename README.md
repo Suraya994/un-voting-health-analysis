@@ -20,6 +20,7 @@ diagnostics.
 ├── data/
 ├── outputs/
 ├── requirements.txt
+├── pyproject.toml
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -38,8 +39,9 @@ un_ga_voting_country_year_summary_100countries.csv
 
 Real research data are not included unless they are public, cleaned, and legally
 shareable. The synthetic generator creates schema-compatible artificial data so
-reviewers can run the pipeline end to end. Synthetic output is for software
-testing only and must not be interpreted as empirical evidence.
+the pipeline can be executed end to end in a reproducible demonstration setting.
+Synthetic output is for software testing only and must not be interpreted as
+empirical evidence.
 
 ## Installation
 
@@ -88,8 +90,8 @@ fig5_empirical_dashboard.png
 - Input and output folders are configurable through command-line arguments.
 - Real CSV files are ignored by git to reduce the risk of accidental data
   disclosure.
-- The synthetic demo currently covers the built-in ISO3 sample used by the
-  generator while preserving the filenames expected by the empirical pipeline.
+- The synthetic demo uses a compact built-in ISO3 sample while preserving the
+  filenames and column schema expected by the empirical pipeline.
 
 ## Author
 
